@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:background="@drawable/main_grandent"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/back_rel"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y25"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/jiantou_white" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人资料"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y30">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/x75"
+            android:layout_height="@dimen/y75"
+            android:layout_centerInParent="true"
+            android:src="@drawable/head_shape" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/y70"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="40px"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="姓名"
+            android:textColor="@color/textColor03"
+            android:textSize="15sp" />
+
+        <EditText
+            style="@style/EditText_Base_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="张蕾"
+            android:textColor="#8a8a8a"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:src="@mipmap/jiantoua" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="40px"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="电话"
+            android:textColor="@color/textColor03"
+            android:textSize="15sp" />
+
+        <EditText
+            style="@style/EditText_Base_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="18290011887"
+            android:textColor="#8a8a8a"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:src="@mipmap/jiantoua" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="40px"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="职务"
+            android:textColor="@color/textColor03"
+            android:textSize="15sp" />
+
+        <EditText
+            style="@style/EditText_Base_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="高级电工"
+            android:textColor="#8a8a8a"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:src="@mipmap/jiantoua" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/commit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y70"
+        android:background="@drawable/commit_shape"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x152"
+    android:layout_height="@dimen/y72"
+    android:background="@drawable/white_bg_rid_3">
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="@dimen/x152"
+        android:layout_height="@dimen/y34"
+        android:background="@color/colorMapGray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/baidu_map_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center"
+            android:text="重点地区1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/x152"
+        android:layout_height="@dimen/y38"
+        android:layout_below="@+id/title_ll"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/baidu_map_item_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center"
+            android:text="七贤岭山海一家"
+            android:textColor="@color/textColor06"
+            android:textSize="@dimen/x14" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/x116"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/baidu_map_item_navigation_iv"
+        android:layout_width="@dimen/x26"
+        android:layout_height="@dimen/x26"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/view"
+        android:background="@mipmap/ic_launcher" />
+</RelativeLayout>

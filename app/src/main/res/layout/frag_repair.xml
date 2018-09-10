@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/main_grandent"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="@dimen/x35"
+            android:layout_height="@dimen/x35"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y35"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_weight="1"
+            android:background="@drawable/search_shape">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x40"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/y20"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x8"
+                    android:text="请输入关键词"
+                    android:textColor="@color/textColor09"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/change_iv"
+            android:layout_width="@dimen/x35"
+            android:layout_height="@dimen/x35"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:background="@drawable/main_grandent">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="全部工单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/repair_title_size" />
+
+            <TextView
+                android:id="@+id/all_num"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:layout_marginTop="@dimen/y12"
+                android:layout_toRightOf="@+id/all"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="@dimen/repair_circle_size" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y3"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的工单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/repair_title_size" />
+
+            <TextView
+                android:id="@+id/my_num"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:layout_marginTop="@dimen/y12"
+                android:layout_toRightOf="@+id/my"
+                android:background="@drawable/circle"
+                android:gravity="center"
+                android:text="99+"
+                android:textColor="@color/white"
+                android:textSize="@dimen/repair_circle_size" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y3"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+
+</LinearLayout>

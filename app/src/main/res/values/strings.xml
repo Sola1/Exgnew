@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exg</string>
+
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+</resources>
