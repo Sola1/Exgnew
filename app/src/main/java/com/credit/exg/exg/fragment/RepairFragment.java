@@ -107,6 +107,7 @@ public class RepairFragment extends IViewFragment<RepairPresenter> implements Re
                     line1.setVisibility(View.VISIBLE);
                     line2.setVisibility(View.GONE);
                     tag = 0;
+                    int a  = 0;
                 }
                 break;
             case R.id.rel_my:
